@@ -1,0 +1,50 @@
+.tópicos {
+    background: var(--azul-degrade);
+    text-align: center;
+    padding: 1em 0; /*Para dar um respiro no titulo da seção */
+}
+.tópicos__titulo {
+    color: var(--branco);
+    font-weight: 300;
+    margin-bottom: 1em;
+}
+
+.tópicos__lista {
+    display: flex;
+    /* Aqui ele alinha todo mundo mais não quebra no fim da tela */
+    flex-wrap: wrap;
+    /*Vai quebrar quando chegar no final da tela  */
+    justify-content: center;
+    /*Para centralizar todos os link no container */
+}
+
+.tópicos__item {
+    margin: 2em 0.5em; /* aqui faço os botões se afastarem com um respiro melhor  */
+}
+
+.tópicos__link {
+    color: var(--branco);
+    padding: 1em; /*Fazer os elementos se afastrem um dos outros  */
+    background-color: var(--laranja);
+    text-decoration: none; /*Faz ele sumir com o sublinhado de link dando mais cara de botão  */
+    font-size: 14px; /*alterando a fonte do botão  */
+    font-weight: 700;
+}
+
+@media screen and (min-width: 1024px) {
+    .tópicos__titulo {
+        font-size: 24px;
+    }
+
+    .tópicos__link {
+        font-size: 24px;
+    }
+    
+}
+
+@media screen and (min-width: 1728px) {
+    .tópicos {
+        padding: 3em 28vw;
+    }
+
+}
